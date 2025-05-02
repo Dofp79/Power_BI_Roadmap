@@ -1,0 +1,43 @@
+Startdatum_Date = 
+VAR DatumText =
+    SUBSTITUTE(
+        SUBSTITUTE(
+            SUBSTITUTE(
+                SUBSTITUTE(
+                    SUBSTITUTE(
+                        SUBSTITUTE(
+                            SUBSTITUTE(
+                                SUBSTITUTE(
+                                    'Roadmap_ITIL'[Startdatum],
+                                    "Montag, ", ""
+                                ),
+                                "Dienstag, ", ""
+                            ),
+                            "Mittwoch, ", ""
+                        ),
+                        "Donnerstag, ", ""
+                    ),
+                    "Freitag, ", ""
+                ),
+                "Samstag, ", ""
+            ),
+            "Sonntag, ", ""
+        ),
+        ".", "-"
+    )
+RETURN
+    IFERROR(DATEVALUE(TRIM(DatumText)), BLANK())
+
+//
+// Dokumentation
+// Spalte: Startdatum_Date
+// Zweck: Wandelt ein Textdatum mit Wochentagsnamen und Punkten (z. B. "Freitag, 01.03.2024") in ein gültiges Datumsformat
+// Projekt: ITIL Self-Service Portal Roadmap
+// Erstellt von: Doniman Francisco Peña Parra
+// Erstellt am: 03.05.2025
+// Beschreibung:
+// - Entfernt Wochentagsnamen aus dem Text
+// - Ersetzt Punkte durch Bindestriche für konsistentes Datumsformat
+// - Nutzt DATEVALUE, um Text in Datum zu konvertieren
+// - Gibt BLANK zurück, wenn der Wert nicht interpretierbar ist
+//
