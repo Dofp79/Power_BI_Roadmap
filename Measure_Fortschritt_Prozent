@@ -1,0 +1,18 @@
+Fortschritt_Prozent = 
+VAR Heute = TODAY()
+VAR GlobalStart = MIN('Roadmap_ITIL'[Startdatum_Date])
+VAR GlobalEnde = MAX('Roadmap_ITIL'[Enddatum_Date])
+VAR Gesamtdauer = DATEDIFF(GlobalStart, GlobalEnde, DAY)
+VAR BisherTage = DATEDIFF(GlobalStart, Heute, DAY)
+RETURN
+    DIVIDE(BisherTage, Gesamtdauer, 0) * 100
+// 
+// Dokumentation
+// Measures:   Fortschritt_Prozent
+// Projekt:    ITIL Self-Service Portal Roadmap
+// Zweck:      Prozentualer Fortschritt auf Zeitachse (heute vs. Projektlaufzeit)
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   03.05.2025
+// Prinzipien: Keep it simple & Collaborate and promote visibility
+// Hinweis:    Diese Measure funktioniert am besten in einem kontextfreien Bereich oder mit globalem Projektfilter.
+//
