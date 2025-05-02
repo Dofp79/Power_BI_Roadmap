@@ -1,4 +1,4 @@
-DatumsTabelle = 
+Tabelle_DatumsTabelle = 
 ADDCOLUMNS(
     CALENDAR(DATE(2023,1,1), DATE(2026,12,31)),  // Erzeugt eine vollständige Datumsreihe von Jan 2023 bis Dez 2026
     "Jahr", YEAR([Date]),                        // Extrahiert das Jahr für jedes Datum
