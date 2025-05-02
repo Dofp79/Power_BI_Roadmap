@@ -8,11 +8,11 @@ RETURN
     DIVIDE(BisherTage, Gesamtdauer, 0) * 100
 // 
 // Dokumentation
-// Measures:   Fortschritt_Prozent
+// Measure:    Fortschritt_Prozent
 // Projekt:    ITIL Self-Service Portal Roadmap
 // Zweck:      Prozentualer Fortschritt auf Zeitachse (heute vs. Projektlaufzeit)
 // Autor:      Doniman Francisco Peña Parra
 // Erstellt:   03.05.2025
 // Prinzipien: Keep it simple & Collaborate and promote visibility
-// Hinweis:    Diese Measure funktioniert am besten in einem kontextfreien Bereich oder mit globalem Projektfilter.
+// Hinweis:    Funktioniert am besten ohne Zeilenkontext (z. B. auf KPI-Karte)
 //
