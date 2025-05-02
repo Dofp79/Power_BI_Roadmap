@@ -1,5 +1,5 @@
 Roadmap_Tage =
-SELECTCOLUMNS( 
+SELECTCOLUMNS(
     GENERATE(
         // Nur Zeilen mit gültigem Start- UND Enddatum verwenden
         FILTER(
