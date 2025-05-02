@@ -1,0 +1,41 @@
+Roadmap_Tage =
+SELECTCOLUMNS(
+    GENERATE(
+        // Nur Zeilen mit gültigem Start- UND Enddatum verwenden
+        FILTER(
+            'Roadmap_ITIL',
+            NOT ISBLANK('Roadmap_ITIL'[Startdatum_Date]) &&
+            NOT ISBLANK('Roadmap_ITIL'[Enddatum_Date])
+        ),
+        // Für jede gültige Zeile eine Datumsreihe von Start bis Ende erzeugen
+        ADDCOLUMNS(
+            CALENDAR(
+                'Roadmap_ITIL'[Startdatum_Date],
+                'Roadmap_ITIL'[Enddatum_Date]
+            ),
+            // Weitere Projektinfos an jeden Tag anfügen
+            "PhaseAktiv",     'Roadmap_ITIL'[Projektphase],
+            "Status_Info",    'Roadmap_ITIL'[Status],
+            "Reifegrad_Info", 'Roadmap_ITIL'[Reifegrad],
+            "Team_Info",      'Roadmap_ITIL'[Team],
+            "Risiko_Info",    'Roadmap_ITIL'[Risiko]
+        )
+    ),
+    // Definiere die Spalten für die finale Tabelle
+    "Datum",          [Date],
+    "PhaseAktiv",     [PhaseAktiv],
+    "Status_Info",    [Status_Info],
+    "Reifegrad_Info", [Reifegrad_Info],
+    "Team_Info",      [Team_Info],
+    "Risiko_Info",    [Risiko_Info]
+)
+//
+// Dokumentation
+// Tabelle: Roadmap_Tage
+// Zweck: Erstellt tägliche Gantt-Zeilen pro Projektphase
+// Projekt: ITIL Self-Service Portal Roadmap
+// Erstellt von: Doniman Francisco Peña Parra
+// Erstellt am: 03.05.2025
+// Beschreibung: Wandelt Start- und Enddaten jeder Phase in Tageszeilen um
+//               inkl. Reifegrad, Status, Team, Risiko
+//
