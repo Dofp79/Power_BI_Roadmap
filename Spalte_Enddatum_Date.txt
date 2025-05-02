@@ -1,0 +1,42 @@
+Enddatum_Date = 
+VAR DatumText =
+    SUBSTITUTE(
+        SUBSTITUTE(
+            SUBSTITUTE(
+                SUBSTITUTE(
+                    SUBSTITUTE(
+                        SUBSTITUTE(
+                            SUBSTITUTE(
+                                SUBSTITUTE(
+                                    'Roadmap_ITIL'[Enddatum],
+                                    "Montag, ", ""
+                                ),
+                                "Dienstag, ", ""
+                            ),
+                            "Mittwoch, ", ""
+                        ),
+                        "Donnerstag, ", ""
+                    ),
+                    "Freitag, ", ""
+                ),
+                "Samstag, ", ""
+            ),
+            "Sonntag, ", ""
+        ),
+        ".", "-"
+    )
+RETURN
+    IFERROR(DATEVALUE(TRIM(DatumText)), BLANK())
+
+//
+// Dokumentation
+// Spalte: Enddatum_Date
+// Zweck: Konvertiert ein Textdatum mit Wochentagsangabe (z. B. "Montag, 01.01.2024") in ein gültiges Datum
+// Projekt: ITIL Self-Service Portal Roadmap
+// Erstellt von: Doniman Francisco Peña Parra
+// Erstellt am: 03.05.2025
+// Beschreibung:
+// - Entfernt Wochentagsnamen und Punkte
+// - Wandelt den bereinigten String per DATEVALUE in ein echtes Datum um
+// - Gibt BLANK() zurück, wenn das Datum nicht konvertiert werden kann
+//
