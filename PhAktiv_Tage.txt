@@ -1,0 +1,20 @@
+PhAktiv_Tage = 
+CALCULATE(
+    COUNTROWS('Roadmap_Tage'),
+    'Roadmap_Tage'[Datum] = TODAY()
+)
+// 
+// Dokumentation
+// Measure:    PhAktiv_Tage
+// Tabelle:    Roadmap_Tage
+// Projekt:    ITIL Self-Service Portal Roadmap
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   05.05.2025
+// Zweck:      Zählt alle aktiven Projektphasen auf Tagesebene
+// Beschreibung:
+// - Misst die Anzahl der Tage, an denen mindestens eine Projektphase aktiv ist
+// - Unterstützt die tägliche Sprint- und Kapazitätsauswertung
+// - Ideal für Liniendiagramme, Heatmaps und KPI-Karten
+// - Grundlage: Tabelle 'Roadmap_Tage' enthält eine Zeile pro Tag je aktiver Phase
+// Prinzipien: Beginne dort wo du stehst | Arbeite iterativ mit Feedback
+// 
