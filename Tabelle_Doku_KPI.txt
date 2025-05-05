@@ -1,8 +1,9 @@
 Doku_KPI = 
 SELECTCOLUMNS( 
     { "Dokumentationseintrag" }, 
-    "Kommentar" 
+    "Kommentar", "Dies ist ein Platzhalter für Dokumentationseinträge"
 )
+
 // 
 // Dokumentation
 // Tabelle:    Doku_KPI
