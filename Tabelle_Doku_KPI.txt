@@ -1,18 +1,4 @@
-// ==============================================
-// Tabelle:    Doku_KPI
-// Typ:        Berechnete Tabelle (Calculated Table)
-// Projekt:    ITIL Self-Service Portal Roadmap
-// Autor:      Doniman Francisco Peña Parra
-// Erstellt:   03.05.2025
-// Zweck:      Platzhalter für Metadaten, Dokumentation oder Custom-Kommentare im Modell
-// Beschreibung:
-// - Erstellt eine Ein-Zeilen-Tabelle mit einem Kommentar-Feld
-// - Kann als Modellierungsanker für Metadaten dienen
-// - Nützlich für spätere Erweiterungen, automatische Dokumentation oder Hinweise für User
-// - Kann in Tools wie Tabular Editor ergänzt/exportiert werden
-// Prinzipien: Arbeite iterativ mit Feedback | Fördere Transparenz
-// ==============================================
-Doku_KPI = 
+
 SELECTCOLUMNS( 
     { "Dokumentationseintrag" }, 
     "Kommentar" 
