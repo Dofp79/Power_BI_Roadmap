@@ -1,7 +1,13 @@
-/ ==============================================
+AktivePhasen_Heute =
+CALCULATE(
+    COUNTROWS('Roadmap_Tage'),
+    'Roadmap_Tage'[Datum] = TODAY()
+)
+//
+// Dokumentation
 // Measure:    AktivePhasen_Heute
 // Tabelle:    Roadmap_Tage
-// Projekt:    ITIL Self-Service Portal Roadmap
+// Projekt:    ITIL - Roadmap
 // Autor:      Doniman Francisco Peña Parra
 // Erstellt:   05.05.2025
 // Zweck:      Ermittelt die Anzahl der aktiven Projektphasen am heutigen Kalendertag
@@ -11,9 +17,4 @@
 // - Unterstützt Daily Standups, Tages-KPIs und Sprintsteuerung
 // - Einsatz z. B. auf KPI-Karten oder als Indikator für Auslastung
 // Prinzipien: Fokussiere dich auf den Wert | Halte es einfach und praktisch
-// ==============================================
-AktivePhasen_Heute =
-CALCULATE(
-    COUNTROWS('Roadmap_Tage'),
-    'Roadmap_Tage'[Datum] = TODAY()
-)
+// 
