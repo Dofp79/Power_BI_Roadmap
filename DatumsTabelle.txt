@@ -8,7 +8,7 @@ ADDCOLUMNS(
 
 // Tabelle: DatumsTabelle
 // Zweck: Erstellung einer vollständigen Datumstabelle zur Nutzung als Zeitdimension
-// Projekt: ITIL KPI & Roadmap Dashboard
+// Projekt: ITIL - Roadmap
 // Erstellt von: Doniman Francisco Peña Parra
 // Erstellt am: 03.05.2025
 // Beschreibung: Ermöglicht saubere Zeitfilterung, Monats- und Jahresanalysen sowie Integration mit Roadmap- und KPI-Zeitbezug
