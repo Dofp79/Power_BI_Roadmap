@@ -1,7 +1,13 @@
 Doku_KPI = 
-SELECTCOLUMNS( 
-    { "Dokumentationseintrag" }, 
-    "Kommentar", "Dies ist ein Platzhalter für Dokumentationseinträge"
+DATATABLE(
+    "Kommentar", STRING,
+    "Autor", STRING,
+    "Thema", STRING,
+    "Datum", STRING,
+    {
+        { "Measure 'PhAktiv_Tage' erfasst aktive Tage pro Phase", "Doniman", "Roadmap_Tage", "2025-05-05" },
+        { "Measure 'AktivePhasen_Heute' liefert aktuelle Auslastung", "Doniman", "Roadmap_Tage", "2025-05-05" }
+    }
 )
 
 // 
