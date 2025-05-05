@@ -1,4 +1,4 @@
-
+Doku_KPI = 
 SELECTCOLUMNS( 
     { "Dokumentationseintrag" }, 
     "Kommentar" 
