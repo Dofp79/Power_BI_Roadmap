@@ -3,7 +3,8 @@ SELECTCOLUMNS(
     { "Dokumentationseintrag" }, 
     "Kommentar" 
 )
-// ==============================================
+// 
+// Dokumentation
 // Tabelle:    Doku_KPI
 // Typ:        Berechnete Tabelle (Calculated Table)
 // Projekt:    ITIL - Roadmap
@@ -16,4 +17,4 @@ SELECTCOLUMNS(
 // - Nützlich für spätere Erweiterungen, automatische Dokumentation oder Hinweise für User
 // - Kann in Tools wie Tabular Editor ergänzt/exportiert werden
 // Prinzipien: Arbeite iterativ mit Feedback | Fördere Transparenz
-// ==============================================
+// 
