@@ -1,4 +1,6 @@
-// ==============================================
+Anzahl_PhaseGeplant = COUNTROWS('Roadmap_ITIL')
+//
+// Dukumentation
 // Tabelle:    Roadmap_ITIL
 // Measure:    Anzahl_PhaseGeplant
 // Projekt:    ITIL - Roadmap
@@ -10,6 +12,4 @@
 // - Wird als einfacher KPI zur Übersicht und Fortschrittsverfolgung genutzt
 // - Ideal für Management-Dashboards oder Ressourcensteuerung
 // Prinzipien: Halte es einfach und praktisch
-// ==============================================
-
-Anzahl_PhaseGeplant = COUNTROWS('Roadmap_ITIL')
+// 
