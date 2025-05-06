@@ -1,0 +1,20 @@
+Offset_Start = 
+DATEDIFF(
+    MIN('DatumsTabelle'[Date]),
+    'Roadmap_ITIL'[Startdatum_Date],
+    DAY
+)
+// Dokumentation
+// Spalte:     Offset_Start
+// Tabelle:    Roadmap_ITIL
+// Projekt:    ITIL - Roadmap
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   06.05.2025
+// Zweck:      Berechnet den zeitlichen Versatz (in Tagen) vom Projektstartdatum
+// Beschreibung:
+// - Gibt die Anzahl der Tage zwischen einem Basisstartdatum (z. B. 01.01.2024) und dem Startdatum der jeweiligen Projektphase zurück
+// - Wird verwendet, um die horizontale Position von Balken im Gantt-Diagramm mit nativem gestapeltem Balkenvisual zu simulieren
+// - Unterstützt visuelle Zeitachse ohne Custom Visual
+// Prinzipien: Halte es einfach und praktisch | Fördere Transparenz
+// 
+
