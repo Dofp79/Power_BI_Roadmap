@@ -8,11 +8,12 @@ DATEDIFF(
 
 //
 // Dokumentation
-// Spalte: Dauer_Tage
-// Zweck: Berechnet die Anzahl der Tage zwischen Start- und Enddatum einer Projektphase
-// Projekt: ITIL Self-Service Portal Roadmap
-// Erstellt von: Doniman Francisco Peña Parra
-// Erstellt am: 03.05.2025
+// Tabelle:    Roadmap_ITIL
+// Spalte:     Dauer_Tage
+// Zweck:      Berechnet die Anzahl der Tage zwischen Start- und Enddatum einer Projektphase
+// Projekt:    ITIL - Roadmap
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   03.05.2025
 // Beschreibung:
 // - Nutzt DATEDIFF zur Ermittlung der Dauer in Tagen
 // - Voraussetzung: gültige Datumswerte in beiden Spalten
