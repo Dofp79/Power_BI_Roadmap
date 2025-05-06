@@ -9,7 +9,8 @@ RETURN
 // 
 // Dokumentation
 // Measure:    Fortschritt_Prozent
-// Projekt:    ITIL Self-Service Portal Roadmap
+// Tabelle:    Roadmap_ITIL (Kontext: projektweite Laufzeit)
+// Projekt:    ITIL - Roadmap
 // Zweck:      Prozentualer Fortschritt auf Zeitachse (heute vs. Projektlaufzeit)
 // Autor:      Doniman Francisco Peña Parra
 // Erstellt:   03.05.2025
