@@ -1,0 +1,15 @@
+// ==============================================
+// Tabelle:    Roadmap_ITIL
+// Measure:    Anzahl_PhaseGeplant
+// Projekt:    ITIL - Roadmap
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   06.05.2025
+// Zweck:      Zählt alle geplanten Projektphasen im Datenmodell
+// Beschreibung:
+// - Gibt die Anzahl der Zeilen in 'Roadmap_ITIL' zurück
+// - Wird als einfacher KPI zur Übersicht und Fortschrittsverfolgung genutzt
+// - Ideal für Management-Dashboards oder Ressourcensteuerung
+// Prinzipien: Halte es einfach und praktisch
+// ==============================================
+
+Anzahl_PhaseGeplant = COUNTROWS('Roadmap_ITIL')
