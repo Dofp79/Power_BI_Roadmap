@@ -1,0 +1,21 @@
+Heute_Linie = 
+IF(
+    'DatumsTabelle'[Date] = TODAY(),
+    1,
+    BLANK()
+)
+// 
+// Dokumentetion
+// Tabelle:    DatumsTabelle
+// Measure:    Heute_Linie
+// Projekt:    ITIL - Roadmap
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   06.05.2025
+// Zweck:      Markiert das heutige Datum mit einem sichtbaren Wert für Zeitdiagramme
+// Beschreibung:
+// - Gibt den Wert 1 zurück, wenn das Datum in der DatumsTabelle dem heutigen Datum entspricht
+// - Ermöglicht eine vertikale „Heute“-Markierung in Liniendiagrammen oder kombinierten Visuals
+// - In Kombination mit `Datum` auf der X-Achse ergibt das einen Marker
+// - Formatierbar als Linie (hellgrau/blau) zur Tagesorientierung
+// Prinzipien: Fördere Transparenz | Halte es einfach und praktisch
+// 
