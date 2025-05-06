@@ -30,9 +30,10 @@ RETURN
 
 //
 // Dokumentation
+// Tabelle:    Roadmap_ITIL
 // Spalte: Startdatum_Date
 // Zweck: Wandelt ein Textdatum mit Wochentagsnamen und Punkten (z. B. "Freitag, 01.03.2024") in ein gültiges Datumsformat
-// Projekt: ITIL Self-Service Portal Roadmap
+// Projekt: ITIL - Roadmap
 // Erstellt von: Doniman Francisco Peña Parra
 // Erstellt am: 03.05.2025
 // Beschreibung:
