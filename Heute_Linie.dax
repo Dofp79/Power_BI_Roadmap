@@ -1,9 +1,10 @@
 Heute_Linie = 
 IF(
-    'DatumsTabelle'[Date] = TODAY(),
+    SELECTEDVALUE('DatumsTabelle'[Date]) = TODAY(),
     1,
     BLANK()
 )
+
 // 
 // Dokumentetion
 // Tabelle:    DatumsTabelle
