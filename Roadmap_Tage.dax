@@ -31,11 +31,16 @@ SELECTCOLUMNS(
 )
 //
 // Dokumentation
-// Tabelle: Roadmap_Tage
-// Zweck: Erstellt tägliche Gantt-Zeilen pro Projektphase
-// Projekt: ITIL Self-Service Portal Roadmap
-// Erstellt von: Doniman Francisco Peña Parra
-// Erstellt am: 03.05.2025
-// Beschreibung: Wandelt Start- und Enddaten jeder Phase in Tageszeilen um
-//               inkl. Reifegrad, Status, Team, Risiko
+// Tabelle:    Roadmap_Tage
+// Typ:        Berechnete Tabelle (Calculated Table)
+// Projekt:    ITIL - Roadmap
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   03.05.2025
+// Zweck:      Erstellt tägliche Gantt-Zeilen pro Projektphase
+// Beschreibung:
+// - Nutzt GENERATE + CALENDAR, um für jede Projektphase tägliche Datumszeilen zu erzeugen
+// - Filtert nur gültige Zeilen mit Start- und Enddatum
+// - Fügt Metadaten wie Projektphase, Status, Reifegrad, Team und Risiko je Tag hinzu
+// - Grundlage für Heatmaps, Zeitachsen, Sprintanalysen und Auslastungsdarstellungen
+// Prinzipien: Denk und arbeite ganzheitlich | Fokussiere dich auf den Wert
 //
