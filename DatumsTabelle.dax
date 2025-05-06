@@ -1,0 +1,20 @@
+DatumsTabelle = 
+ADDCOLUMNS(
+    CALENDAR(DATE(2023,1,1), DATE(2026,12,31)),  // Erzeugt eine vollständige Datumsreihe von Jan 2023 bis Dez 2026
+    "Jahr", YEAR([Date]),                        // Extrahiert das Jahr für jedes Datum
+    "Monat", FORMAT([Date], "MMM YYYY"),         // Formatierter Monatsname, z. B. "Jan 2024"
+    "MonatNummer", MONTH([Date])                 // Numerische Monatsangabe (1 bis 12)
+)
+//
+// Dokumentation    
+// Tabelle:    DatumsTabelle
+// Zweck:      Erstellung einer vollständigen Datumstabelle zur Nutzung als Zeitdimension
+// Projekt:    ITIL - Roadmap
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   03.05.2025
+// Beschreibung:
+// - Generiert alle Tage zwischen dem 01.01.2023 und 31.12.2026
+// - Ergänzt um Jahr, Monatsformat (z. B. "Jan 2024") und Monatsnummer (1–12)
+// - Grundlage für Zeitachsen, Zeitfilter und periodische KPI-Auswertungen
+// Prinzipien: Halte es einfach und praktisch | Beginne dort, wo du stehst
+//
