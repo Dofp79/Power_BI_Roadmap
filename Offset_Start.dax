@@ -1,9 +1,6 @@
 Offset_Start = 
-DATEDIFF(
-    MIN('DatumsTabelle'[Date]),
-    'Roadmap_ITIL'[Startdatum_Date],
-    DAY
-)
+DATEDIFF(DATE(2024,1,1), MIN('Roadmap_ITIL'[Startdatum_Date]), DAY)
+
 // Dokumentation
 // Spalte:     Offset_Start
 // Tabelle:    Roadmap_ITIL
@@ -17,4 +14,3 @@ DATEDIFF(
 // - Unterstützt visuelle Zeitachse ohne Custom Visual
 // Prinzipien: Halte es einfach und praktisch | Fördere Transparenz
 // 
-
