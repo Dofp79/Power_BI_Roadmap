@@ -30,13 +30,17 @@ RETURN
 
 //
 // Dokumentation
-// Spalte: Enddatum_Date
-// Zweck: Konvertiert ein Textdatum mit Wochentagsangabe (z. B. "Montag, 01.01.2024") in ein gültiges Datum
-// Projekt: ITIL Self-Service Portal Roadmap
-// Erstellt von: Doniman Francisco Peña Parra
-// Erstellt am: 03.05.2025
+// Tabelle:    Roadmap_ITIL
+// Spalte:     Enddatum_Date
+// Projekt:    ITIL - Roadmap
+// Autor:      Doniman Francisco Peña Parra
+// Erstellt:   03.05.2025
+// Zweck:      Konvertiert ein Textdatum mit Wochentagsangabe in ein gültiges Datum
 // Beschreibung:
-// - Entfernt Wochentagsnamen und Punkte
-// - Wandelt den bereinigten String per DATEVALUE in ein echtes Datum um
-// - Gibt BLANK() zurück, wenn das Datum nicht konvertiert werden kann
+// - Entfernt Wochentagsbezeichnungen (z. B. "Montag, ", "Dienstag, ", etc.)
+// - Ersetzt Punkte durch Bindestriche für ein konsistentes Datumsformat
+// - Wandelt das bereinigte Textdatum mit DATEVALUE in ein echtes Datum um
+// - Gibt BLANK() zurück, wenn das Datum nicht interpretierbar ist
+// - Ermöglicht die Nutzung als Zeitbasis in Zeitachsen und KPI-Berechnungen
+// Prinzipien: Halte es einfach und praktisch | Beginne dort, wo du stehst
 //
