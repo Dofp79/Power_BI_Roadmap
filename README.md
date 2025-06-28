@@ -8,7 +8,7 @@ Diese Lösung stellt eine vollständig automatisierte Power BI Roadmap zur Verf�
 
 ✔️ Visualisierung von **ITIL-Projektphasen auf Tagesbasis**  
 ✔️ Transparente Darstellung von **Reifegrad, Risiko und Status**  
-✔️ Automatisierte Erstellung von **Gantt-ähnlichen Zeitachsen**  
+✔️ Automatisierte Erstellung von **Gantt-ähnlichen Zeitachsen** 
 ✔️ Unterstützung für **Daily Standups, Sprintplanung und Governance-Berichte**
 
 ---
@@ -56,6 +56,7 @@ Power_BI_Roadmap/
 ├── Roadmap_Tage.dax
 ├── Startdatum_Date.dax
 └── README.md
+```
 ---
 
 ##  Verwandte Repositorien
