@@ -62,7 +62,7 @@ Power_BI_Roadmap/
 
 -  **ITIL-Practice-Governance-Bebauungsplan**: (https://github.com/Dofp79/ITIL-Practice-Governance-Bebauungsplan)
 -  **ITSM_Power_BI_Vorlage_1.0.0**: (https://github.com/Dofp79/ITSM_Power_BI_Vorlage_1.0.0)
--  **Referatskapazität – Analysemodell für Sprint- & Teamkapazitäten in Power BI**: ([https://github.com/Dofp79/Power_BI_Roadmap](https://github.com/Dofp79/Referatskapazit-t/tree/main))
+-  **Referatskapazität – Analysemodell für Sprint- & Teamkapazitäten in Power BI**: (https://github.com/Dofp79/Referatskapazit-t/tree/main)
 
 ---
 
